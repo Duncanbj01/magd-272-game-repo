@@ -982,13 +982,13 @@ GameObject:
   - component: {fileID: 373492363}
   - component: {fileID: 373492362}
   - component: {fileID: 373492361}
+  - component: {fileID: 373492370}
   - component: {fileID: 373492366}
   - component: {fileID: 373492364}
   - component: {fileID: 373492365}
   - component: {fileID: 373492368}
   - component: {fileID: 373492367}
   - component: {fileID: 373492369}
-  - component: {fileID: 373492370}
   - component: {fileID: 373492371}
   m_Layer: 0
   m_Name: King_Idle_0
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373492359}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb6562c22a6546b4694fcc4bd2a0c6d7, type: 3}
   m_Name: 
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373492359}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bea4926172f1cd8499cff2d67d60a18e, type: 3}
   m_Name: 
@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373492359}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b74d330f9c122a4087776aab9384789, type: 3}
   m_Name: 
@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373492359}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f7fb18b32735c34aab762438fb148bc, type: 3}
   m_Name: 
@@ -1851,6 +1851,7 @@ GameObject:
   - component: {fileID: 815360362}
   - component: {fileID: 815360361}
   - component: {fileID: 815360363}
+  - component: {fileID: 815360364}
   m_Layer: 0
   m_Name: Terrain_assets_6
   m_TagString: Untagged
@@ -1936,7 +1937,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1951,6 +1952,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 1}
   m_EdgeRadius: 0
+--- !u!251 &815360364
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815360360}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &828695658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,6 +2361,7 @@ GameObject:
   - component: {fileID: 939556091}
   - component: {fileID: 939556093}
   - component: {fileID: 939556094}
+  - component: {fileID: 939556095}
   m_Layer: 0
   m_Name: Checkpoint (No Flag)
   m_TagString: Untagged
@@ -2408,7 +2429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939556090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.67, y: 4.49, z: 0}
+  m_LocalPosition: {x: 5.69, y: 4.44, z: 0}
   m_LocalScale: {x: 3.8007112, y: 2.3842938, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2446,7 +2467,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2472,6 +2493,28 @@ PolygonCollider2D:
       - {x: -0.04557699, y: 0.11751691}
       - {x: -0.07, y: 0.16}
       - {x: -0.099999994, y: 0.16}
+--- !u!114 &939556095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939556090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc29b66f089f4b74fb698204596e7702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OffSprite: {fileID: 21300000, guid: 97f03fe78ba14504d805d33619e21a5c, type: 3}
+  OnSprite: {fileID: 5249495973877922429, guid: ea6b41403e93ccd4aa55a5987c7e1cf7, type: 3}
+  active: 0
+  target: []
+  toggle: 0
+  interactable:
+  - {fileID: 1531376834}
+  - {fileID: 1011439759}
+  - {fileID: 1916669371}
+  keycode: 101
 --- !u!1 &1003145349
 GameObject:
   m_ObjectHideFlags: 0
