@@ -4703,9 +4703,9 @@ GameObject:
   - component: {fileID: 2086797570}
   - component: {fileID: 2086797568}
   - component: {fileID: 2086797569}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: lever_0
-  m_TagString: interactables
+  m_TagString: levers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
