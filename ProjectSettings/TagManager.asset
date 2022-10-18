@@ -7,7 +7,7 @@ TagManager:
   - Collectible
   - CheckPoint
   - interactables
-  - levers
+  - lever
   layers:
   - Default
   - TransparentFX
@@ -16,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - levers
+  - 
   - 
   - 
   - 
