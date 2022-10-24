@@ -1123,7 +1123,6 @@ GameObject:
   - component: {fileID: 373492367}
   - component: {fileID: 373492369}
   - component: {fileID: 373492371}
-  - component: {fileID: 373492374}
   - component: {fileID: 373492373}
   - component: {fileID: 373492372}
   m_Layer: 0
@@ -1416,34 +1415,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 373492359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aad35f6120bff3a43b7944767d2e221d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 2
-  onlyDamagePlayer: 1
-  disable: 0
---- !u!114 &373492373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373492359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f78525892c19dfe498af180def6e8e47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 1
   attackSpeed: 0.5
   attackInput: 102
   attackOffset: {fileID: 161427636}
   attackRange: 1
   attackLayer:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 0
   weaponAnchor: {fileID: 161427634}
---- !u!114 &373492374
+--- !u!114 &373492373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
