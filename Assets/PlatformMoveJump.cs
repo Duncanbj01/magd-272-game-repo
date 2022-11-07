@@ -22,7 +22,8 @@ public class PlatformMoveJump : MonoBehaviour
     [SerializeField]
     int maxJump = 2;
     [SerializeField]
-    int jumpCount = 0; 
+    int jumpCount = 0;
+    bool facingRight = false; 
 
 
     // Start is called before the first frame update
@@ -58,6 +59,9 @@ public class PlatformMoveJump : MonoBehaviour
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y * 0.5f);
         }
+
+        // flip
+        flip(); 
     }
 
     public bool Grounded()
@@ -71,4 +75,31 @@ public class PlatformMoveJump : MonoBehaviour
             return false; 
         }
     }
+
+    public void flip()
+    {
+        if((horizontal < 0 && facingRight) || (horizontal > 0 && !facingRight))
+        {
+            facingRight = !facingRight;
+            transform.Rotate(new Vector3(0, 180, 0)); 
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("bomb"))
+        {
+            Debug.Log($"Collided with {collision.gameObject.name}");
+            collision.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log($"Collided with {collision.gameObject.name} with a isTriggerCollider");
+        Destroy(collision.gameObject); 
+    }
+
 }
+
+
