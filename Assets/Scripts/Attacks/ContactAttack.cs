@@ -24,6 +24,17 @@ public class ContactAttack : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!disable)
+        {
+            if ((onlyDamagePlayer && collision.gameObject.GetComponent<PlayerHealth>()) || (!onlyDamagePlayer && collision.gameObject.GetComponent<Health>()))
+            {
+                collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+            }
+        }
+    }
+
     void Awake()
     {
         if (damage <= 0)
