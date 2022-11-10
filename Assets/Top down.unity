@@ -1962,8 +1962,8 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 16b46e7047a6048058c0d23ec23fc8b3, type: 3}
   soundVolume: 0.02
   playSound: 1
-  goalSound: {fileID: 8300000, guid: 44380c5b1de084f70b8c24e0c7b204e0, type: 3}
-  volume: 0.2
+  goalSound: {fileID: 8300000, guid: fcde3f6d405594f5b9ff78fe3db24523, type: 3}
+  volume: 0.15
   changeScene: 1
   sceneChangeDelay: 4
   sceneName: TD Main menu
@@ -3695,6 +3695,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 733708332, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: soundtrack.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 733708332, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: soundtrack.Array.data[0].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b87659c859564ba1881a5271b87d3f7, type: 3}
+    - target: {fileID: 733708333, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
       propertyPath: m_RootOrder
       value: 15

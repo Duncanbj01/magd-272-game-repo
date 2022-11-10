@@ -1479,7 +1479,7 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 32b316fb378624b5994016f81db1248e, type: 3}
   soundVolume: 0.05
   playSound: 0
-  goalSound: {fileID: 8300000, guid: 99ad1fb4035cb4ba898010e29ef5fd88, type: 3}
+  goalSound: {fileID: 0}
   volume: 0.25
   changeScene: 0
   sceneChangeDelay: 5
@@ -3294,7 +3294,7 @@ MonoBehaviour:
   active: 0
   oppositeState: 0
   target: []
-  sound: {fileID: 8300000, guid: 32b316fb378624b5994016f81db1248e, type: 3}
+  sound: {fileID: 0}
   soundVolume: 0.5
   requiresKey: 1
 --- !u!114 &939556096
@@ -3311,7 +3311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerArrived: 0
   playSound: 1
-  sound: {fileID: 8300000, guid: 99ad1fb4035cb4ba898010e29ef5fd88, type: 3}
+  sound: {fileID: 8300000, guid: 32b316fb378624b5994016f81db1248e, type: 3}
   volume: 0.25
   changeScene: 1
   sceneChangeDelay: 5
@@ -5541,6 +5541,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 733708332, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: soundtrack.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 733708332, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: soundtrack.Array.data[0].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 44380c5b1de084f70b8c24e0c7b204e0, type: 3}
+    - target: {fileID: 733708332, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: soundtrack.Array.data[0].playCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 733708333, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5586127412356374514, guid: b07c97dce03a448c58ec2d45fb12d191, type: 3}
       propertyPath: m_RootOrder
       value: 22
