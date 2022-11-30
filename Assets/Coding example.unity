@@ -207,6 +207,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1313060910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313060912}
+  - component: {fileID: 1313060911}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1313060911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313060910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a53738b1e70f944585d6d80f811eafd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinCollected: 0
+--- !u!4 &1313060912
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313060910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.0635114, y: -0.12129085, z: -0.035892677}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1395010930
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +379,6 @@ GameObject:
   - component: {fileID: 1603390468}
   - component: {fileID: 1603390467}
   - component: {fileID: 1603390466}
-  - component: {fileID: 1603390465}
   - component: {fileID: 1603390464}
   m_Layer: 0
   m_Name: Chameleon
@@ -355,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7fb18b32735c34aab762438fb148bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 8
   jumpForce: 10
   jumpButton: 32
   groundCheckTransform: {fileID: 1570299741}
@@ -365,20 +409,6 @@ MonoBehaviour:
     m_Bits: 2147483647
   maxJump: 10
   jumpCount: 0
---- !u!114 &1603390465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603390463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bea4926172f1cd8499cff2d67d60a18e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animators: []
-  moveSpeed: 10
 --- !u!50 &1603390466
 Rigidbody2D:
   serializedVersion: 4
@@ -697,8 +727,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -431165059
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 4386436724953992984, guid: 7cdeba100f90b454f8e7bd464f330182, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
